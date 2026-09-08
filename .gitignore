@@ -1,0 +1,87 @@
+# ==============================================================================
+# Gitignore: AWS Architecture Knowledge Vault (Obsidian & Git)
+# ==============================================================================
+
+# --- Obsidian Workspace & Local State ---
+# Keep core configuration and plugins, ignore machine-specific workspace & cache
+.trash/
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
+.obsidian/**/cache/
+.obsidian/**/indexeddb/
+.obsidian/graph.json
+
+# --- Operating System Files ---
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.fuse_hidden*
+
+# --- Cloud Storage Metadata (Google Drive / iCloud / OneDrive / Dropbox) ---
+# Prevents sync lock / conflict artifacts when repo is inside cloud-synced folders
+Icon?
+Icon
+*.tmp.drivedownload
+*.driveupload
+.drivebackup
+*.gdoc
+*.gsheet
+*.gslides
+*.icloud
+.dropbox
+.dropbox.attr
+.dropbox.cache
+
+# --- IDEs & Code Editors ---
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+# VS Code (preserve extensions & recommendations if added, ignore local workspace state)
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# --- AWS & Cloud Credentials / Secrets ---
+# Protect against accidental commits of sensitive lab credentials or keys
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pub
+*credentials
+*credentials.json
+aws-credentials
+terraform.tfvars
+*.tfvars
+
+# --- Temporary & Scratch Artifacts ---
+tmp/
+temp/
+scratch/
+*.log
