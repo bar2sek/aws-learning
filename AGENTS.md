@@ -131,16 +131,26 @@ To maximize knowledge transfer and keep the user actively engaged without causin
 * **Workshop Hierarchy**: Level 1 French Cleats (3/4" Baltic Birch, 45° rails), Level 2 Multiboard Islands, Level 3 Gridfinity (42mm) & Underware.
 * **Project Documentation**: Log print builds in `Projects/` using `Templates/Template - Print Project Log.md`.
 
-### D. Knowledge Base & Curriculum (`aws-learning`)
-* **Directory Scoping**: Confine active research and notes to `10_Projects/<project>/` or `20_Knowledge/<domain>/`.
-* **Inbox Workflow**: When processing `00_Inbox/`, extract core insights, apply YAML frontmatter/tags, move refined notes to their home directory, and link in domain MOCs.
+### D. Technology Professional & Architecture (`technology-professional`)
+* **Knowledge Architecture**: Interconnected AWS Solutions Architect study guides, domain MOCs, decision matrices, and exam trap breakdowns.
+* **Inbox Workflow**: When processing `00 - Inbox/`, extract core insights, apply YAML frontmatter/tags, move refined notes to their domain directory, and link in domain MOCs.
+* **Professional Portfolio & PDF Engine (`resume/`)**:
+  * **Dual-Artifact Workflow**: Semantic Markdown (`Ryan_Bartusek_Resume_2026vX.md`) paired with compiled single-page vector PDF (`.pdf`).
+  * **Automated PDF Engine**: Built via headless Chromium browser using `python3 render_pdf.py`.
+  * **Artifact Tracking**: Markdown sources and final `.pdf` files are tracked; `.chrome_profile/` and `resume_preview.html` are strictly gitignored.
 
-### E. Professional Portfolio & PDF Engine (`resume`)
-* **Dual-Artifact Workflow**: Semantic Markdown (`Ryan_Bartusek_Resume_2026vX.md`) paired with compiled single-page vector PDF (`.pdf`).
-* **Automated PDF Engine**: Built via headless Google Chrome using `python3 render_pdf.py`.
-* **Artifact Tracking**: Markdown sources and final `.pdf` files are tracked; `.chrome_profile/` and `resume_preview.html` are strictly gitignored.
-
-### F. Health, Diet & Nutrition (`food-diet-nutrition`)
+### E. Health, Diet & Nutrition (`food-diet-nutrition`)
 * **Evidence-Based Structure**: Organize around macro/micronutrient science, dietary protocols, high-yield recipes, and pantry sourcing.
 * **Biometric & Health Privacy**: Personal lab results, DEXA scans, and private medical markers MUST reside strictly in `private/` (gitignored).
 * **Recipe Standard**: All recipes include standardized ingredient specs, prep workflows, and estimated macronutrient breakdowns (Protein, Fat, Carbs, Calories).
+
+### F. House DIY, Garage Workshop & Bicycle Fleet (`house-diy`)
+* **Residential DIY Standards**: Structural moisture mitigation (2" XPS, Schluter Kerdi waterproofing), full compliance with [[finishes/Master Color & Material Palette|Master Color Palette]] (BM Chantilly Lace, BM Light Mist, BM White Dove).
+* **Garage Workshop Invariants**: 
+  * 3/4" Baltic Birch French Cleat rails cut at 45°, spaced via 3-1/2" story stick datum.
+  * MATCHFIT 360 dovetail clamping grid on 4" centers.
+  * Proprietary purchased plans strictly stored in `garage/Projects/` (gitignored).
+  * Sensitive power tool serial numbers strictly confined to `garage/private/` (gitignored).
+* **Bicycle Shop & Fleet Standards**:
+  * Strict adherence to manufacturer torque specs across carbon frames (Cervélo Áspero, Trek Farley, Ibis Hakka, Yeti ARC).
+  * Recurring maintenance intervals logged in [[bike-shop/Maintenance/Maintenance Schedule & Service Logs|Maintenance Schedule]]: chain wear ($\le 0.5\%$), suspension bath service (50h/200h), tubeless sealant replenishment (90-day cycle).

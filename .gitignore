@@ -85,3 +85,12 @@ tmp/
 temp/
 scratch/
 *.log
+
+# --- Resume Render Engine & Python Artifacts ---
+__pycache__/
+*.py[cod]
+.chrome_profile/
+resume_preview.html
+resume/.chrome_profile/
+resume/resume_preview.html
+resume/__pycache__/

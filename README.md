@@ -1,21 +1,22 @@
-# ☁️ AWS Certified Solutions Architect Knowledge Vault
+# ☁️ Technology Professional & AWS Architecture Knowledge Vault
 
 [![AWS](https://img.shields.io/badge/AWS-SAA--C03%20%7C%20SAP--C02-FF9900?logo=amazon-aws&logoColor=white)](https://aws.amazon.com/certification/)
 [![Obsidian](https://img.shields.io/badge/Obsidian-Vault%20Ready-7C3AED?logo=obsidian&logoColor=white)](https://obsidian.md)
 [![Mermaid](https://img.shields.io/badge/Diagrams-Mermaid.js-00B4D8?logo=mermaid&logoColor=white)](https://mermaid.js.org/)
 [![Git](https://img.shields.io/badge/Version%20Control-Git-F05032?logo=git&logoColor=white)](https://git-scm.com/)
-[![Status](https://img.shields.io/badge/Status-Active%20Study-brightgreen)](#)
+[![Status](https://img.shields.io/badge/Status-Active%20Study%20%26%20Career-brightgreen)](#)
 
-> A production-grade, interconnected Second Brain and active-recall repository engineered for the **AWS Certified Solutions Architect – Associate (SAA-C03)** and **Professional (SAP-C02)** certifications. Built with cross-linked notes, architecture flowcharts, high-yield decision matrices, and exam trap breakdowns.
+> A production-grade, interconnected Second Brain and active-recall repository engineered for the **AWS Certified Solutions Architect – Associate (SAA-C03)** and **Professional (SAP-C02)** certifications, paired with an automated headless browser **resume & career portfolio pipeline**.
 
 ---
 
 ## 🎯 Purpose & Learning Strategy
 
-Passing the AWS Solutions Architect exams requires more than rote memorization of AWS marketing material. It requires:
+Passing the AWS Solutions Architect exams and driving enterprise cloud initiatives requires more than rote memorization of AWS marketing material. It requires:
 1. **Architectural Trade-Off Analysis**: Evaluating Cost vs. Performance vs. Resiliency vs. Operational Overhead.
 2. **Keyword & Pattern Recognition**: Identifying the "hidden requirements" in exam scenarios (e.g., *"lowest operational overhead"*, *"millisecond latency with multi-region replication"*, *"cost-effective archival with rapid retrieval"*).
 3. **Deep Conceptual Interlinking**: Understanding how storage, compute, networking, and security integrate to form resilient enterprise topologies.
+4. **Career Execution & Portfolio Artifacts**: Transforming architectural mastery into ATS-optimized markdown sources and vector print PDFs via an automated headless browser pipeline.
 
 This repository is organized to serve **two environments simultaneously**:
 - **In [Obsidian](https://obsidian.md)**: As a dynamic, bi-directionally linked knowledge graph with Maps of Content (MOCs), visual canvas/graph views, native Mermaid diagrams, and callouts.
@@ -26,7 +27,7 @@ This repository is organized to serve **two environments simultaneously**:
 ## 🗺️ Vault Architecture & Directory Structure
 
 ```text
-aws-learning/
+technology-professional/
 ├── .obsidian/                           # Vault configuration (wikilinks, asset routing)
 ├── 00 - Home.md                         # Master Vault Landing Hub & Knowledge Graph Core
 ├── 00 - Inbox/                          # Staging ground for rapid study capture & exam clippings
@@ -67,6 +68,11 @@ aws-learning/
 ├── 11 - Templates/                      # Standardized templates for new services & scenarios
 │   ├── Template - Service Deep Dive.md
 │   └── Template - Architecture Scenario.md
+├── resume/                              # Career portfolio & automated PDF build pipeline
+│   ├── Ryan_Bartusek_Resume_2026v7.md   # Current active resume content (Markdown)
+│   ├── Ryan_Bartusek_Resume_2026v7.pdf  # Compiled, print-ready vector PDF output
+│   ├── render_pdf.py                    # Python script & CSS print template
+│   └── README.md                        # Portfolio documentation & build instructions
 ├── assets/                              # Screenshots, architecture diagrams, media attachments
 │   └── README.md
 ├── .gitignore                           # Excludes OS junk, cloud sync locks, & private credentials
@@ -92,6 +98,7 @@ aws-learning/
 | **08. Governance** | [Monitoring MOC](08%20-%20Monitoring%20&%20Governance/Monitoring%20MOC.md) | CloudWatch Metrics/Alarms, CloudTrail auditing, AWS Config compliance rules, SSM Parameter Store |
 | **09. Resilience** | [High Availability & DR Strategies](09%20-%20Disaster%20Recovery%20&%20High%20Availability/High%20Availability%20&%20DR%20Strategies.md) | RTO/RPO calculation, Backup & Restore, Pilot Light, Warm Standby, Multi-Site Active-Active |
 | **10. Cheat Sheets** | [Decision Matrices & Cheat Sheets](10%20-%20Decision%20Matrices%20&%20Cheat%20Sheets/) | High-yield keyword matchers, exam distractor traps, and side-by-side service matrices |
+| **11. Career Portfolio** | [resume/](resume/README.md) | Semantic Markdown resume, automated headless browser PDF generator, and enterprise credentials |
 
 ---
 
@@ -147,7 +154,7 @@ pie title SAA-C03 Exam Scoring Weight
 ### 1. Opening the Vault
 1. Launch [Obsidian](https://obsidian.md).
 2. Click **Open folder as vault**.
-3. Select this repository root directory (`aws-learning`).
+3. Select this repository root directory (`technology-professional`).
 4. Obsidian will automatically recognize the pre-configured `.obsidian/app.json`:
    - Internal links use `[[Wikilinks]]`.
    - Pasted images, diagrams, and assets are automatically stored cleanly in `assets/`.
